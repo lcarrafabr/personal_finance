@@ -1,0 +1,31 @@
+
+CADASTRO NO SISTEMA
+
+		String data = "dd/MM/yyyy";
+                String hora = "h:mm - a";
+                String data1, hora1;
+
+                java.util.Date agora = new java.util.Date();;
+                SimpleDateFormat formata = new SimpleDateFormat(data);
+                data1 = formata.format(agora);
+                formata = new SimpleDateFormat(hora);
+                hora1 = formata.format(agora);
+
+                System.out.print(data1+" "+ hora1);
+
+                Historicos oHistorico = new Historicos();
+
+                oHistorico.setCod_pessoa(cod_acesso_usuario);
+                oHistorico.setHistorico("CADASTRO DE TIPO PESSOA "+ 		tipoPessoajComboBox.getSelectedItem().toString()+
+                        " as "+ data1 + " " + hora1);
+                oHistorico.setPessoa(pessoas_usuario_logado);
+                oHistorico.setData(data1 +" "+ hora1);
+                oHistorico.setTipo_historico("CADASTRO NO SISTEMA");
+                oHistorico.setCadastrar();
+
+                ClassConecta.con.commit();
+                ClassConecta.con.setAutoCommit(true);
+
+
+****************************************************************************************
+

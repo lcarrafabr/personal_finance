@@ -1,0 +1,4 @@
+re inclusão da tabela pessoas
+
+
+grade parcelas da aba contas funcionando corretamente e filtrando por pessoas total ou individual, contas total ou individual. automatizado combobox para clicar no boptão pesquisa e auto,atizar a atualização da grade.

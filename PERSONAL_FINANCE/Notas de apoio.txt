@@ -1,0 +1,6 @@
+
+
+ igreja =     cod_comunidade       |   cod_conta       |  cod_pessoa
+
+
+ finance =   cod_centro_custo      |   cod_conta       |  cod_centro_custo

@@ -1,0 +1,18 @@
+SELECT lc.*,cb.BANCO,c.NOME_CENTRO_CUSTO, p.PESSOA
+FROM livro_caixa lc
+left join contas cb ON (cb.COD_CONTAS = lc.COD_CONTAS )
+left join centro_de_custos c ON (c.COD_CENTRO_CUSTO = lc.COD_CENTRO_CUSTO)
+LEFT join pessoas p on (p.COD_PESSOA = lc.COD_PESSOA)
+WHERE 1 = 1
+
+
+
+
+CONSULTA USADA NO MOMENTO
+
+
+SELECT lc.*,cb.BANCO,c.NOME_CENTRO_CUSTO
+FROM livro_caixa lc
+left join contas cb ON (cb.COD_CONTAS = lc.COD_CONTAS )
+left join centro_de_custos c ON (c.COD_CENTRO_CUSTO = lc.COD_CENTRO_CUSTO)
+WHERE 1 = 1
